@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex flex-col min-h-screen bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex flex-1 w-full max-w-3xl mx-auto flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -60,6 +60,46 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+      <footer className="w-full border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950">
+        <div className="max-w-3xl mx-auto px-16 py-8">
+          <div className="flex flex-col gap-6 sm:flex-row sm:justify-between sm:items-center">
+            <div>
+              <p className="text-sm font-semibold text-black dark:text-zinc-50">
+                ClonePilot Storefront
+              </p>
+              <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1">
+                Build amazing storefronts with Next.js
+              </p>
+            </div>
+            <div className="flex gap-6">
+              <a
+                href="#"
+                className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-zinc-50 transition-colors"
+              >
+                Privacy
+              </a>
+              <a
+                href="#"
+                className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-zinc-50 transition-colors"
+              >
+                Terms
+              </a>
+              <a
+                href="#"
+                className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-zinc-50 transition-colors"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+          <div className="mt-6 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">
+              © 2026 ClonePilot Storefront. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
