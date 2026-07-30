@@ -1,7 +1,8 @@
 {
-  "name": "nextjs",
+  "name": "clonepilot-storefront",
   "version": "0.1.0",
   "private": true,
+  "description": "A modern Next.js e-commerce storefront template built with TypeScript, React, and Tailwind CSS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
