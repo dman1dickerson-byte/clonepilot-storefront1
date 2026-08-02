@@ -1,0 +1,4 @@
+Trigger CI rerun
+
+This file was added to trigger a CI rerun from Copilot on user request.
+Timestamp: 2026-08-02T23:45:00Z
