@@ -1,17 +1,30 @@
 {
-  "name": "Next.js TypeScript",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "name": "ClonePilot Storefront",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
-        "github.copilot",
-        "ms-vscode-remote.remote-containers",
-        "esbenp.prettier-vscode"
-      ]
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "firsttris.vscode-jest-runner",
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ]
+      }
     }
   },
-  "postCreateCommand": "corepack enable && pnpm install || npm install",
-  "forwardPorts": [3000],
-  "workspaceFolder": "/workspace",
-  "remoteUser": "vscode"
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
 }
