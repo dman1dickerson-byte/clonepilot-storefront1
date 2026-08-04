@@ -1,0 +1,17 @@
+{
+  "name": "Next.js TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "ms-vscode-remote.remote-containers",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "corepack enable && pnpm install || npm install",
+  "forwardPorts": [3000],
+  "workspaceFolder": "/workspace",
+  "remoteUser": "vscode"
+}
